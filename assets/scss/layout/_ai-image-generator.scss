@@ -1,0 +1,42 @@
+.ai-image-generator {
+    background-color: #0D0F12;
+    font-family: 'Onest', sans-serif;
+
+    h6 {
+        color: #0ECF71;
+    }
+
+    h1 {
+        font-size: clamp(36px, 5vw, 60px);
+        line-height: 1;
+    }
+
+    h4 {
+        color: #E5E5E5;
+    }
+
+    p {
+        color: #CFCFCF;
+        font-size: clamp(14px, 5vw, 18px);
+        width: 450px;
+    }
+    h4 + p{
+        width: 250px;
+    }
+    @media (max-width: 768px) { 
+        h6{
+            margin-top: 20px;
+        }
+        h1 {
+            line-height: 1.2;
+        }
+
+        p {
+            line-height: 1.2;
+        }
+        h4 + p{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+}

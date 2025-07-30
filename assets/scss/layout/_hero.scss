@@ -1,0 +1,121 @@
+.hero {
+    background-color: rgb(13, 15, 18);
+    background-image: url('/images/hero__section/i_1.webp');
+    background-position: center -150px;
+    font-family: 'Onest', sans-serif;
+    h6 {
+        color: #3FD344;
+    }
+
+    p {
+        width: 65%;
+        line-height: 1;
+        font-size: clamp(4rem, 5vw, 5rem);
+
+        @media (max-width: 992px) {
+            width: 60%;
+
+        }
+    }
+
+    .image-carousel-wrapper {
+        overflow: hidden;
+        width: 100%;
+        margin-top: -100px;
+
+        .image-carousel {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 1.5rem;
+        }
+
+        .img-container {
+            position: relative;
+            cursor: pointer;
+            width: 300px;
+            height: 350px;
+            overflow: hidden;
+
+            @media (max-width: 992px) {
+                width: 100%;
+                height: auto;
+            }
+
+            @media (max-width: 576px) {
+                width: 100%;
+                height: auto;
+            }
+
+
+            img.img-style {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                transition: transform 0.3s ease;
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                pointer-events: none;
+                z-index: 1;
+            }
+
+            &::before {
+                background-color: rgba(0, 0, 0, 0.4);
+                z-index: 1;
+            }
+
+            &::after {
+                content: "+";
+                color: white;
+                font-size: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                z-index: 2;
+            }
+
+            &:hover::before,
+            &:hover::after {
+                opacity: 1;
+            }
+
+
+            &.top-0 {
+                margin-top: 0px;
+
+                &:first-child {
+                    margin-left: -80px;
+                }
+
+                &:last-child {
+                    margin-right: -85px;
+                }
+            }
+
+            &.top-1 {
+                margin-top: 100px;
+
+            }
+
+            &.top-2 {
+                margin-top: 200px;
+
+            }
+        }
+    }
+}

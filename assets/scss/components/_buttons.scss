@@ -1,0 +1,24 @@
+.btn {
+    background: linear-gradient(to bottom right, #02ce80, #7bd706);
+    font-weight: 500;
+    font-family: 'Onest', sans-serif;
+    &:hover {
+        background: linear-gradient(to bottom right, #7bd706, #02ce80);
+        transition: all 1.5s ease;
+    }
+}
+
+.btn-transparent {
+    background: transparent !important;
+    font-weight: 500;
+    color: #36C042;
+    border: 1px solid #05CE80;
+    cursor: pointer;
+    font-family: 'Onest', sans-serif;
+    &:hover {
+        background: linear-gradient(to bottom right, #7bd706, #02ce80) !important;
+        color: white;
+        border-color: transparent;
+        transition: all 0.5s ease;
+    }
+}

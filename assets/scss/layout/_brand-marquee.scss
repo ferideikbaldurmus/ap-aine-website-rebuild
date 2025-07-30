@@ -1,0 +1,44 @@
+.brand-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #0D0F12;
+
+    .marquee-inner {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee 30s linear infinite;
+
+        span {
+            font-size: clamp(30px, 6vw, 100px);
+            letter-spacing: 40px;
+
+            svg path {
+                fill: #5F6061 !important;
+            }
+        }
+
+        &:hover {
+            svg {
+                animation-play-state: paused !important;
+            }
+
+            span:hover svg path {
+                fill: #4BD23A !important;
+            }
+        }
+    }
+    svg {
+        animation: brand 3s linear infinite alternate;
+    }
+}
+
+@keyframes brand {
+    0% {
+        transform: translateX(-30px);
+    }
+
+    100% {
+        transform: translateX(20px);
+    }
+}
+

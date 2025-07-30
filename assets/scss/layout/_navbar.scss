@@ -1,0 +1,25 @@
+nav {
+    font-weight: 500;
+    border-bottom: 1px solid #302F42;
+    font-family: 'Onest', sans-serif;
+    // .navbar {
+    //  }
+
+    .nav-link.dropdown-toggle::after {
+        display: none !important;
+    }
+
+    &:hover {
+        background-color: #0D051C;
+        transition: all 0.5s ease;
+    }
+
+    .nav-icon {
+        background-color: #E6405A;
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+        z-index: 999;
+    }
+
+}
