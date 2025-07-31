@@ -333,6 +333,7 @@ nav .nav-icon {
 .how-aine-art-works {
   background-color: #0D0F12;
   font-family: "Onest", sans-serif;
+  border-bottom: 1px solid #28292C;
 }
 .how-aine-art-works h6 {
   color: #18CF6A;
@@ -398,4 +399,14 @@ nav .nav-icon {
   .card .col-md-4 svg .card-body {
     display: flex;
   }
+}
+.statistics {
+  background-color: #0D0F12;
+  font-family: "Onest", sans-serif;
+}
+.statistics h1 {
+  font-size: 60px;
+}
+.statistics span {
+  color: #43D33E !important;
 }/*# sourceMappingURL=main.css.map */
