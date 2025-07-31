@@ -409,4 +409,114 @@ nav .nav-icon {
 }
 .statistics span {
   color: #43D33E !important;
+}
+
+.portfolio {
+  background-color: #0D0F12;
+  font-family: "Onest", sans-serif;
+  border-bottom: 1px solid #28292C;
+}
+.portfolio h6 {
+  color: #48CC34;
+}
+.portfolio p {
+  color: #E5E5E5;
+  font-size: 18px;
+  width: 45%;
+}
+.portfolio h1 {
+  font-size: clamp(38px, 5vw, 60px);
+}
+.portfolio .portfolio-title {
+  width: 60%;
+}
+.portfolio .gradient-portfolio {
+  position: relative;
+}
+.portfolio .gradient-portfolio h1 {
+  position: absolute;
+  background: linear-gradient(180deg, #e8e7ff, rgba(236, 235, 248, 0.031372549) 97.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 330px;
+  opacity: 0.1;
+}
+@media (max-width: 761px) {
+  .portfolio h6 {
+    font-size: 12px;
+  }
+  .portfolio .portfolio-title {
+    width: 100%;
+  }
+  .portfolio p {
+    width: 100%;
+    text-align: center;
+  }
+}
+.portfolio .img-wrapper {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.portfolio .img-wrapper img {
+  display: block;
+  transition: transform 0.3s ease;
+}
+.portfolio .img-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+.portfolio .img-wrapper:hover::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.portfolio .img-wrapper .hover-plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+.portfolio .img-wrapper:hover .hover-plus {
+  opacity: 1;
+}
+.portfolio .portfolio-text {
+  cursor: pointer;
+}
+.portfolio .portfolio-text h6.linear-gradient-text-color {
+  background: linear-gradient(to bottom right, #02ce80, #7bd706);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: color 0.3s ease;
+}
+.portfolio .portfolio-text svg {
+  transition: transform 0.3s ease;
+}
+.portfolio .portfolio-text:hover h6 {
+  color: white !important;
+}
+.portfolio .portfolio-text:hover svg {
+  transform: rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+  .col-md-3.d-flex.flex-column.gap-3 {
+    max-width: 347.5px;
+  }
+  .col-md-3:not(.d-flex.flex-column.gap-3) {
+    max-width: 347.5px;
+  }
+  .col-md-6 {
+    max-width: 705px;
+  }
 }/*# sourceMappingURL=main.css.map */

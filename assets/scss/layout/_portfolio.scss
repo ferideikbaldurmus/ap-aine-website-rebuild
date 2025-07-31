@@ -1,0 +1,135 @@
+.portfolio {
+    background-color: #0D0F12;
+    font-family: 'Onest', sans-serif;
+    border-bottom: 1px solid #28292C;
+
+    h6 {
+        color: #48CC34;
+    }
+
+    p {
+        color: #E5E5E5;
+        font-size: 18px;
+        width: 45%;
+    }
+
+    h1 {
+        font-size: clamp(38px, 5vw, 60px);
+
+    }
+
+    .portfolio-title {
+        width: 60%;
+    }
+
+    .gradient-portfolio {
+        position: relative;
+
+        h1 {
+            position: absolute;
+            background: linear-gradient(180deg, #e8e7ff, #ecebf808 97.92%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 330px;
+            opacity: 0.1;
+        }
+    }
+
+    @media (max-width: 761px) {
+        h6 {
+            font-size: 12px;
+        }
+
+        .portfolio-title {
+            width: 100%;
+        }
+
+        p {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+    .img-wrapper {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+
+        img {
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0);
+            transition: background-color 0.3s ease;
+            z-index: 1;
+        }
+
+        &:hover::before {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hover-plus {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 48px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            z-index: 2;
+        }
+
+        &:hover .hover-plus {
+            opacity: 1;
+        }
+    }
+
+    .portfolio-text {
+        cursor: pointer;
+
+        h6.linear-gradient-text-color {
+            background: linear-gradient(to bottom right, #02ce80, #7bd706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transition: color 0.3s ease;
+        }
+
+        svg {
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            h6 {
+                color: white !important;
+            }
+
+            svg {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-3.d-flex.flex-column.gap-3 {
+        max-width: 347.5px;
+    }
+
+    .col-md-3:not(.d-flex.flex-column.gap-3) {
+        max-width: 347.5px;
+    }
+
+    .col-md-6 {
+        max-width: 705px;
+    }
+}
