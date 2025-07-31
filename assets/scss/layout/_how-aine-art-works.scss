@@ -1,0 +1,92 @@
+.how-aine-art-works {
+    background-color: #0D0F12;
+    font-family: 'Onest', sans-serif;
+
+    h6 {
+        color: #18CF6A;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: clamp(36px, 5vw, 60px);
+        line-height: 1;
+        width: 80%;
+    }
+
+    p {
+        color: #D8D8D8;
+    }
+
+    .card {
+        margin-left: -120px;
+
+        svg {
+            margin-top: 15px;
+        }
+    }
+
+    .btn-transparent {
+        margin-left: -250px !important;
+        color: #3FD244;
+        width: 205px;
+        height: 58px;
+        border: 1px solid #3FD244 !important;
+        transition: all 0.5s ease;
+
+        &:hover {
+            border: 1px solid white !important;
+            color: white;
+            transition: all 0.5s ease;
+        }
+    }
+
+
+}
+
+@media (max-width: 767.98px) {
+    .how-aine-art-works {
+        flex-direction: column !important;
+    }
+
+    .mobile-design {
+
+        h6,
+        h1 {
+            margin-left: -30px;
+        }
+
+        .card {
+            margin-left: -30px;
+
+        }
+
+        .card-title {
+            margin-top: -70px;
+            margin-left: 60px;
+        }
+
+        h5,
+        p {
+            margin-left: 60px;
+            margin-top: 10px;
+        }
+    }
+
+    .card .row {
+        flex-direction: row !important;
+        align-items: center;
+
+    }
+
+    .card .col-md-4,
+    .card .col-md-8 {
+        flex: none;
+        width: auto;
+    }
+
+    .card .col-md-4 svg .card-body {
+        display: flex;
+
+    }
+
+}
