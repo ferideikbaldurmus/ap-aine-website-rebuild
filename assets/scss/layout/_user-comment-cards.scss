@@ -1,0 +1,41 @@
+.user-comment-cards {
+    background-color: #0D0F12;
+    font-family: 'Onest', sans-serif;
+.card-background-image{
+    background-image: url(/images/i_7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+    h6 {
+        color: #3DD245;
+        font-size: clamp(12px, 6vw, 14px);
+    }
+    h1 {
+        font-size: clamp(38px, 5vw, 60px);
+
+    }
+    p {
+        color: #E5E5E5;
+        font-size: 18px;
+    }
+    .card{
+        flex: 1 1 300px;  
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #37383A;
+        border-radius: 0px;
+        min-width: 410px;
+        transition: all 0.3s ease;
+        .card-text{
+            font-size: 18px;
+        }
+        &:hover{
+            border: 1px solid #02CE80;
+            background: linear-gradient(135deg, rgba(2, 206, 128, 0.36) 0%, rgba(10, 38, 10, 0.00) 51.04%, rgba(123, 215, 6, 0.36) 100%);
+            transition: all 0.3s ease;
+        }
+    }
+
+}

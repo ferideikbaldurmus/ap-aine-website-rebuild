@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .btn {
   background: linear-gradient(to bottom right, #02ce80, #7bd706);
   font-weight: 500;
@@ -519,4 +523,43 @@ nav .nav-icon {
   .col-md-6 {
     max-width: 705px;
   }
+}
+.user-comment-cards {
+  background-color: #0D0F12;
+  font-family: "Onest", sans-serif;
+}
+.user-comment-cards .card-background-image {
+  background-image: url(/images/i_7.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.user-comment-cards h6 {
+  color: #3DD245;
+  font-size: clamp(12px, 6vw, 14px);
+}
+.user-comment-cards h1 {
+  font-size: clamp(38px, 5vw, 60px);
+}
+.user-comment-cards p {
+  color: #E5E5E5;
+  font-size: 18px;
+}
+.user-comment-cards .card {
+  flex: 1 1 300px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #37383A;
+  border-radius: 0px;
+  min-width: 410px;
+  transition: all 0.3s ease;
+}
+.user-comment-cards .card .card-text {
+  font-size: 18px;
+}
+.user-comment-cards .card:hover {
+  border: 1px solid #02CE80;
+  background: linear-gradient(135deg, rgba(2, 206, 128, 0.36) 0%, rgba(10, 38, 10, 0) 51.04%, rgba(123, 215, 6, 0.36) 100%);
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=main.css.map */
