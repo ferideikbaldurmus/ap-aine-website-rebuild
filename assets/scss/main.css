@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   overflow-x: hidden;
 }
@@ -562,4 +563,93 @@ nav .nav-icon {
   border: 1px solid #02CE80;
   background: linear-gradient(135deg, rgba(2, 206, 128, 0.36) 0%, rgba(10, 38, 10, 0) 51.04%, rgba(123, 215, 6, 0.36) 100%);
   transition: all 0.3s ease;
+}
+
+.you-ask-we-answer {
+  margin-top: -140px;
+}
+.you-ask-we-answer h1 {
+  font-size: clamp(38px, 5vw, 60px);
+}
+.you-ask-we-answer .accordion .accordion-item {
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid #323336;
+}
+.you-ask-we-answer .accordion .accordion-item .accordion-header .accordion-button {
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding-left: 2rem;
+}
+.you-ask-we-answer .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+.you-ask-we-answer .accordion .accordion-item .accordion-header .accordion-button::before {
+  content: "+";
+  font-size: 35px;
+  color: #fff;
+  margin-right: 0.75rem;
+  display: inline-block;
+  width: 1rem;
+}
+.you-ask-we-answer .accordion .accordion-item .accordion-header .accordion-button.not-collapsed::before, .you-ask-we-answer .accordion .accordion-item .accordion-header .accordion-button[aria-expanded=true]::before {
+  content: "–";
+}
+.you-ask-we-answer .accordion .accordion-item .accordion-header .accordion-button::after {
+  display: none;
+}
+.you-ask-we-answer .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  border: none;
+}
+.you-ask-we-answer .accordion .accordion-item .accordion-header .accordion-button .accordion-text {
+  position: relative;
+  display: inline-block;
+}
+.you-ask-we-answer .accordion .accordion-item .accordion-header .accordion-button .accordion-text::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+.you-ask-we-answer .accordion .accordion-item .accordion-header .accordion-button:hover .accordion-text::after {
+  transform: scaleX(1);
+}
+.you-ask-we-answer .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  transform: rotate(0deg);
+}
+.you-ask-we-answer .accordion .accordion-item .accordion-collapse .accordion-body {
+  width: 90%;
+}
+.you-ask-we-answer .accordion .accordion-item .accordion-collapse .accordion-body p {
+  font-size: 16px;
+  font-weight: 200;
+}
+@media (max-width: 768px) {
+  .you-ask-we-answer .accordion .accordion-item {
+    margin-left: -25px;
+  }
+  .you-ask-we-answer .accordion .accordion-item .you-ask-we-answer .left-image {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .you-ask-we-answer .accordion .accordion-item .you-ask-we-answer .left-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+  .you-ask-we-answer .accordion .accordion-item p {
+    margin-left: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */
