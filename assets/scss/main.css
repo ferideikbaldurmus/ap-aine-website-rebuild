@@ -159,6 +159,10 @@ nav .nav-icon {
   margin-top: 200px;
 }
 
+.dropdown-menu ul {
+  background-color: rgb(15, 6, 33);
+}
+
 .brand-marquee {
   overflow: hidden;
   white-space: nowrap;

@@ -5,10 +5,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-   height: 100vh;
+    height: 100vh;
+
     @media (max-width: 768px) {
         height: 1400px;
     }
+
     .newsletter-title h6 {
         color: #35D24B;
     }
@@ -73,19 +75,18 @@
         .card {
             width: 414px;
             height: 412px;
+
             @media (max-width: 768px) {
-            
-      
                 border-right: 1px solid#1D262A;
                 border-left: 1px solid#1D262A;
                 min-width: 100%;
-                min-height: 100%; 
-                
+                min-height: 100%;
+
             }
+
             img {
                 width: 145px;
                 height: 58px;
-
             }
 
             p {
@@ -109,7 +110,6 @@
                 }
             }
         }
-    
     }
 
 }
