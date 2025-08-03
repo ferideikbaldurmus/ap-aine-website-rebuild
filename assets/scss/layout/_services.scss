@@ -24,20 +24,23 @@
         border-bottom-left-radius: 10px !important;
         background: transparent;
     }
+
     .card-text {
         color: #E5E5E5;
         word-wrap: break-word;
         font-size: 16px;
         font-weight: 400;
     }
+
     .card:last-child {
         border-right: none;
     }
 
     .btn {
         background-color: #28292C !important;
-width: 46px;
-height: 46px;
+        width: 46px;
+        height: 46px;
+
         &:hover {
             background: linear-gradient(to bottom right, #7bd706, #02ce80) !important;
             color: white;

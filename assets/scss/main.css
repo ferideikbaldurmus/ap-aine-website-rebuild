@@ -652,4 +652,81 @@ nav .nav-icon {
   .you-ask-we-answer .accordion .accordion-item p {
     margin-left: 15px;
   }
+}
+
+.our-blog {
+  background-color: #0D0F12 !important;
+  font-family: "Onest", sans-serif;
+}
+.our-blog .gradient-blog {
+  position: relative;
+}
+.our-blog .gradient-text-fix {
+  position: absolute;
+  background: linear-gradient(180deg, #e8e7ff, rgba(236, 235, 248, 0.031372549) 97.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  word-spacing: -0.2em;
+  letter-spacing: 0.02em;
+  font-size: 330px;
+  font-weight: 600;
+  opacity: 0.1;
+  line-height: 1;
+}
+.our-blog h6 {
+  color: #41D340 !important;
+  font-size: 14px;
+}
+.our-blog h1 {
+  font-size: clamp(38px, 5vw, 60px);
+}
+.our-blog .our-blog-title,
+.our-blog .our-blog .text-center h1 {
+  position: relative;
+  z-index: 1;
+}
+.our-blog .card {
+  text-align: center;
+  overflow: hidden;
+}
+.our-blog .card .card-span {
+  color: #979797;
+}
+.our-blog .card .card-title .dot-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  font-size: 20px;
+  margin-top: -10px;
+}
+.our-blog .card .card-img-top {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+  object-fit: cover;
+}
+.our-blog .card .card-img-top:hover {
+  transform: scale(1.02);
+}
+.our-blog .card .card-text {
+  color: #FFFFFF;
+  transition: all 0.5s ease;
+  font-size: 24px;
+  font-weight: 600;
+}
+.our-blog .card .card-text:hover {
+  color: #49CE36;
+  transition: all 0.5s ease;
+}
+.our-blog .card .btn-blog {
+  background-color: #2E3133 !important;
+  width: 45px;
+  height: 45px;
+}
+.our-blog .card .btn-blog:hover {
+  background: linear-gradient(to bottom right, #7bd706, #02ce80);
+  transition: all 1.5s ease;
 }/*# sourceMappingURL=main.css.map */
