@@ -729,4 +729,38 @@ nav .nav-icon {
 .our-blog .card .btn-blog:hover {
   background: linear-gradient(to bottom right, #7bd706, #02ce80);
   transition: all 1.5s ease;
+}
+
+.marquee-inner-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #0D0F12 !important;
+  font-family: "Onest", sans-serif;
+}
+.marquee-inner-container .marquee-inner {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 40s linear infinite;
+}
+.marquee-inner-container .marquee-inner span {
+  color: transparent;
+  -webkit-text-stroke: 1px #02ce80;
+  font-size: 100px;
+  font-size: clamp(30px, 6vw, 80px);
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-family: "Onest", sans-serif;
+  text-transform: uppercase;
+}
+.marquee-inner-container .marquee-inner span svg {
+  margin-top: -10px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }/*# sourceMappingURL=main.css.map */

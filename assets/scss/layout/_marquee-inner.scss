@@ -1,0 +1,37 @@
+.marquee-inner-container {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #0D0F12 !important;
+    font-family: 'Onest', sans-serif;
+
+    .marquee-inner {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee 40s linear infinite;
+
+        span {
+            color: transparent;
+            -webkit-text-stroke: 1px #02ce80;
+            font-size: 100px;
+            font-size: clamp(30px, 6vw, 80px);
+            font-weight: 700;
+            letter-spacing: 3px;
+            font-family: 'Onest', sans-serif;
+            text-transform: uppercase;
+
+            svg {
+                margin-top: -10px;
+            }
+        }
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
