@@ -59,14 +59,110 @@ nav .navbar-nav .nav-link {
 }
 nav .dropdown-menu {
   background-color: #0D0F12;
-  color: #FFFFFF;
-  width: 250px;
-  height: auto;
-  border-radius: none;
+  min-width: auto;
+  padding: 40px 50px;
+  border-radius: 0;
+  border: none;
+  transition: all ease 0.3s;
 }
 nav .dropdown-menu .dropdown-item {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+nav .dropdown-menu .dropdown-item:hover {
+  color: #06A468;
+  transition: all ease 0.3s;
+  background-color: transparent;
+}
+nav .dropdown-menu-shop {
+  margin-left: -300px;
+  background-color: #0D0F12;
+}
+nav .dropdown-menu-shop .dropdown-item {
+  background-color: #0D0F12;
+}
+nav .dropdown-menu-shop img {
+  width: 200px;
+}
+nav .custom-dropdown-home {
+  background-color: #0D0F12;
+  width: 1400px;
+  border: none;
+  border-radius: 0;
+  margin-left: -180px;
+}
+nav .image-scroll-wrapper {
+  overflow-x: auto;
   white-space: nowrap;
-  font-size: 11px;
+}
+nav .image-scroll-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+nav .image-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #555;
+}
+nav .image-scroll-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+nav .image-item {
+  flex: 0 0 auto;
+  width: 200px;
+}
+nav .image-item img {
+  width: 190px;
+  height: 250px;
+}
+nav .image-item span {
+  font-size: 15px;
+}
+nav .image-item p {
+  font-size: 15px;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+nav .nav-item.dropdown {
+  position: relative;
+}
+nav .nav-item.dropdown::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  height: 40px;
+  pointer-events: auto;
+  z-index: 9999;
+  opacity: 0;
+}
+nav .nav-item.dropdown:hover > .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+nav .nav-item.dropdown:hover::after {
+  opacity: 1;
+}
+nav .nav-item.dropdown .dropdown-menu {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 1050;
+  background-color: #0D0F12;
+}
+nav .nav-item.dropdown:hover .dropdown-menu {
+  pointer-events: auto;
+}
+
+.mobile-navbar .btn {
+  display: none;
 }
 
 .hero {
