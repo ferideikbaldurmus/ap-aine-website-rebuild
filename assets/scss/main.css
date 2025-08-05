@@ -54,6 +54,20 @@ nav .nav-icon {
   font-size: 10px;
   z-index: 999;
 }
+nav .navbar-nav .nav-link {
+  white-space: nowrap;
+}
+nav .dropdown-menu {
+  background-color: #0D0F12;
+  color: #FFFFFF;
+  width: 250px;
+  height: auto;
+  border-radius: none;
+}
+nav .dropdown-menu .dropdown-item {
+  white-space: nowrap;
+  font-size: 11px;
+}
 
 .hero {
   background-color: rgb(13, 15, 18);

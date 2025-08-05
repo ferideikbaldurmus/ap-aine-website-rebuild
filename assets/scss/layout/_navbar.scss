@@ -22,4 +22,21 @@ nav {
         z-index: 999;
     }
 
+    .navbar-nav .nav-link {
+        white-space: nowrap;
+    }
+
+    .dropdown-menu {
+        background-color: #0D0F12;
+        color: #FFFFFF;
+        width: 250px;
+        height: auto;
+        border-radius: none;
+        .dropdown-item {
+            white-space: nowrap;
+            font-size: 11px;
+
+        }
+    }
+
 }
