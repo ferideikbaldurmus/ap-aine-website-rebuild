@@ -149,10 +149,108 @@ nav {
             pointer-events: auto;
         }
     }
+
 }
 
 .mobile-navbar {
+    background-color: #100620;
+    height: 100px;
+
+    .d-flex.align-items-center.justify-content-center.gap-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        ul.mobile-button {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        svg {
+            display: block;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: #FFFFFF;
+        min-width: auto;
+        padding: 40px 50px;
+        border-radius: 0;
+        border: none;
+        transition: all ease 0.3s;
+        margin-top: 1.2rem;
+        margin-left: -110px;
+
+        .dropdown-item {
+            color: #313335;
+            font-weight: 400;
+
+            &:hover {
+                color: #06A468;
+                transition: all ease 0.3s;
+                background-color: transparent;
+            }
+        }
+    }
+
+    .mobile-button {
+        list-style: none;
+
+        .dropdown {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -40px;
+                height: 40px;
+                pointer-events: auto;
+                z-index: 9999;
+            }
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .dropdown-toggle::after {
+            display: none !important;
+        }
+
+        .dropdown {
+            position: relative;
+
+            .dropdown-menu {
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                transition: all 0.3s ease-in-out;
+                pointer-events: none;
+                z-index: 1050;
+            }
+
+            &:hover .dropdown-menu {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+            }
+        }
+    }
+
     .btn {
         display: none;
     }
+
 }
