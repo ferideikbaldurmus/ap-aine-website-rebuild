@@ -4,21 +4,30 @@
     background-color: #0D0F12 !important;
     font-family: 'Onest', sans-serif;
 
+    display: flex; 
+    gap: 40px;
+
     .marquee-inner {
-        display: inline-block;
-        white-space: nowrap;
-        animation: marquee 40s linear infinite;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0; 
+        min-width: 100%;
+        animation: marquee 80s linear infinite;
 
         span {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            
             color: transparent;
             -webkit-text-stroke: 1px #02ce80;
-            font-size: 100px;
             font-size: clamp(30px, 6vw, 80px);
             font-weight: 700;
             letter-spacing: 3px;
             font-family: 'Onest', sans-serif;
+
             svg {
-                margin-top: -10px;
+                flex-shrink: 0; 
             }
         }
     }
@@ -26,10 +35,9 @@
 
 @keyframes marquee {
     0% {
-        transform: translateX(0%);
+        transform: translateX(0);
     }
-
     100% {
-        transform: translateX(-50%);
+        transform: translateX(calc(-100% - 80px)); 
     }
 }

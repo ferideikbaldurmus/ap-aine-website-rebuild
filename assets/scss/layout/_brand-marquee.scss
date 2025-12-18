@@ -2,43 +2,50 @@
     overflow: hidden;
     white-space: nowrap;
     background-color: #0D0F12;
+    display: flex; 
 
     .marquee-inner {
-        display: inline-block;
-        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0; 
+        min-width: 100%; 
+        
+
+        padding-right: 30px; 
         animation: marquee 30s linear infinite;
 
         span {
             font-size: clamp(30px, 6vw, 100px);
-            letter-spacing: 40px;
+            margin-right: 50px; 
+            
+            display: inline-flex;
+            align-items: center;
 
             svg path {
                 fill: #5F6061 !important;
+                transition: fill 0.3s ease;
             }
         }
 
         &:hover {
-            svg {
-                animation-play-state: paused !important;
-            }
+            animation-play-state: paused;
 
             span:hover svg path {
                 fill: #4BD23A !important;
             }
         }
     }
+    
     svg {
         animation: brand 3s linear infinite alternate;
     }
 }
 
-@keyframes brand {
+@keyframes marquee {
     0% {
-        transform: translateX(-30px);
+        transform: translateX(0);
     }
-
     100% {
-        transform: translateX(20px);
+        transform: translateX(-100%);
     }
 }
-
